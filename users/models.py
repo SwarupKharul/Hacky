@@ -51,7 +51,7 @@ class userProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="profile")
     bio = models.TextField(blank=True, null=True)
     location = models.CharField(max_length=30, blank=True)
-    is_organizer = models.BooleanField(default=False)
+    # is_organizer = models.BooleanField(default=False)
     date_joined = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
 

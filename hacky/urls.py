@@ -32,4 +32,8 @@ urlpatterns = [
         get_schema_view(title="API", description="API for the API", version="1.0.0"),
         name="openapi-schema",
     ),
+    path(
+        "hackathon/",
+        include(("hackathon.urls", "hackathon"), namespace="hackathon"),
+    ),
 ]
